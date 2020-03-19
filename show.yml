@@ -1,0 +1,14 @@
+---
+  - name: show command
+    hosts: switches
+    gather_facts: False
+    connection: network_cli
+    tasks:
+      - name: first task
+        ios_command:
+          commands: show version
+        register: version
+
+      - name: Second Task
+        debug:
+          var: version
