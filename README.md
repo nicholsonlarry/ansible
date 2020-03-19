@@ -1,7 +1,7 @@
 # ansible
 This playbooks were created for Cisco IOS Devices.  There are a lot of youtube videos to get started with Ansible.
 It looks like you need the developers edition to include the "IOS" modules needed.  I set up on Ansible on a Raspberry Pi3,
-and works well for mall home network.
+and works well for a small home network.
 These are generally the steps I tood to set it up... (rough notes)  I had issues with the crypto module in python.
 You should probably have python3 setup and updated before installing ansible?
 
