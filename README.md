@@ -5,10 +5,6 @@ and works well for a small home network.
 These are generally the steps I tood to set it up... (rough notes)  I had issues with the crypto module in python.
 You should probably have python3 setup and updated before installing ansible?
 
-On raspberry pi
-https://www.google.com/amp/s/geektechstuff.com/2019/06/25/installing-ansible-raspberry-pi/amp/
--- will need to change location and install the developers version
-
 to configure the files VIM will make it easier or nano
 -sudo apt-get install vim to fix VI issues
 
