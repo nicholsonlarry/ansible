@@ -1,0 +1,14 @@
+## Backup Running Config 
+ 
+- hosts: SWITCHES 
+ 
+  tasks:
+   - name: Backup Running Config  
+     ios_command:
+       commands: show run  
+     register: config
+ 
+   - name: Save output to ~/network-programmability/backups/
+     copy:
+       content: "{{config.stdout[0]}}"
+       dest: "~/network-programmability/backups/{{hostvars.localhost.DTG}}/{{ inventory_hostname }}-{{hostvars.localhost.DTG}}-config.txt"
